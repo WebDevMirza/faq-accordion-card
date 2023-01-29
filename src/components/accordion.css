@@ -1,0 +1,132 @@
+.wrapper {
+  max-width: 375px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 1.25rem;
+  margin-top: 10rem;
+}
+
+.accordion-img {
+  position: relative;
+  min-height: 170px;
+  background: url(../assets/images/bg-pattern-mobile.svg) no-repeat top 0 left 50px;
+  background-size: 75%;
+}
+
+.accordion-img img {
+  position: absolute;
+  max-width: 280px;
+  top: -130px;
+  left: 50px;
+}
+
+.faq {
+  text-align: center;
+  font-weight: 700;
+}
+
+.faqs {
+  padding: 0 1.25rem;
+}
+
+.line {
+  background-color: var(--Lightgrayishblue);
+  height: 1px;
+  width: 100%;
+}
+
+details {
+  padding: 1.125rem 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+details > summary:hover {
+  color: var(--Softred);
+}
+
+details[open] {
+  color: var(--Verydarkdesaturatedblue);
+  font-weight: 700;
+}
+
+details[open] > summary:hover {
+  color: var(--Softred);
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  color: var(--Verydarkgrayishblue);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+details > summary {
+  list-style-type: none;
+  position: relative;
+  padding-right: 1rem;
+}
+
+details > summary::before {
+  content: url(../assets/images/icon-arrow-down.svg);
+  position: absolute;
+  right: 0;
+}
+
+details[open] > summary::before {
+  rotate: 180deg;
+}
+
+.accordion-body {
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    max-width: 800px;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+
+  .accordion-img {
+    position: relative;
+    min-width: 150px;
+    background: url(../assets/images/bg-pattern-desktop.svg) no-repeat top -192px left -542px;
+    background-size: 250%;
+    width: 40%;
+  }
+
+  .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+  }
+
+  .accordion-img::after {
+    position: absolute;
+    content: url(../assets/images/illustration-box-desktop.svg);
+    top: 200px;
+    left: -120px;
+    scale: 0.8;
+  }
+
+  .accordion-img img {
+    position: absolute;
+    max-width: 300px;
+    top: 150px;
+    left: -70px;
+  }
+
+  .accordion-body {
+    width: 60%;
+  }
+
+  .faq {
+    margin-top: 3rem;
+  }
+}

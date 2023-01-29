@@ -1,0 +1,56 @@
+:root {
+  /*  ===============================
+      Colors
+      ===============================   */
+
+  --Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+  --Softred: hsl(14, 88%, 65%);
+
+  /* Background gradient: */
+  --Softviolet: hsl(273, 75%, 66%);
+  --Softblue: hsl(240, 73%, 65%);
+
+  /* #### Text */
+  --Verydarkgrayishblue: hsl(237, 12%, 33%);
+  --Darkgrayishblue: hsl(240, 6%, 50%);
+
+  /* #### Dividers */
+  --Lightgrayishblue: hsl(240, 5%, 91%);
+
+  /* ===============================
+     Fonts
+     ===============================  */
+
+  --ff-primary: "Kumbh Sans", sans-serif;
+  --fs-fontsize: 1rem;
+  --fw-400: 400;
+  --fw-600: 700;
+}
+
+/* ==============================
+   Body
+   ==============================  */
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-fontsize);
+  font-weight: var(--fw-400);
+  background: linear-gradient(var(--Softviolet), var(--Softblue));
+  color: var(--Verydarkgrayishblue);
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+}
+
+/* ==============================
+Layout
+============================== */
+/* main {
+  min-height: 100vh;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* ================================
+   Typography
+   ================================ */
